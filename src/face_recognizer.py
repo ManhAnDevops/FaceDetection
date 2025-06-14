@@ -110,11 +110,14 @@ if __name__ == "__main__":
                     
                     # Recognize emotion using DeepFace
                     face = img[y:y+h, x:x+w]
-                    emotion_result = DeepFace.analyze(face, actions=['emotion'], enforce_detection=False)
-                    emotion = emotion_result[0]['dominant_emotion']
+                    result = DeepFace.analyze(face, actions = ['age', 'gender', 'race', 'emotion'], enforce_detection=False)
+                    emotion = result[0]['dominant_emotion']
+                    age = result[0]['age']
+                    gender = result[0]['dominant_gender']
+                    race = result[0]['dominant_race']
                     
                     # Display name, emotion, and confidence
-                    cv2.putText(img, f"{name} - {emotion}", (x+5, y-5), 
+                    cv2.putText(img, f"{name} - {emotion} - {age} - {gender} - {race}", (x+5, y-5), 
                             cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2)
                     cv2.putText(img, confidence_text, (x+5, y+h-5), 
                             cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 0), 1)
