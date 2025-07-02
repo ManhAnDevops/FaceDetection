@@ -1,14 +1,3 @@
-## Installation
-
-```bash
-pip install -r requirements.txt
-```
-
-Required packages:
-- opencv-python
-- opencv-contrib-python
-- pillow
-- pyyaml
 
 ## Configuration
 

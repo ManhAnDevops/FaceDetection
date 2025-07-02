@@ -9,7 +9,6 @@ import logging
 from settings.settings import CAMERA, FACE_DETECTION, PATHS
 from deepface import DeepFace  
 
-# Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
