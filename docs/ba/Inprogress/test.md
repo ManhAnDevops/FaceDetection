@@ -1,8 +1,8 @@
 ---
 id: business-rules
 title: Business Rules
-description: Quy tắc nghiệp vụ
-tags: [ba, inprogress]
+description: Quy tắc nghiệp vụ ehhehehe 1123
+tags: [ba, inprogress] 
 --- 
 **MỤC LỤC**
 
